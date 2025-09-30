@@ -13,6 +13,6 @@ abss x
 sumAll :: [Int] -> Int
 -- sumAll (x)
 --      | null x = 0
---      | otherwise = head (x) + (sumAll.(tail)) (x)
+--      | otherwise = head (x) + (sumAll.(tail)) (x) // tail te devuelve la lista sin la cabeza
 sumAll [] = 0
 sumAll (x:xs) = x + sumAll xs
