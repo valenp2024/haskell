@@ -17,11 +17,16 @@ sumAll :: [Int] -> Int
 sumAll [] = 0
 sumAll (x:xs) = x + sumAll xs
 
-
+--14
 pow1 :: Int -> Int
 pow1 d = d
+
 pow2 :: Int -> (Int -> Int)
 pow2 d c = d + c
 
 pow3 :: Int -> (Int -> (Int -> Int))
 pow3 d c e = d + c + e
+
+-- 15
+suma4 :: Int -> (Int -> Int)
+suma4 = pow3 4
