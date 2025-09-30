@@ -13,6 +13,15 @@ abss x
 sumAll :: [Int] -> Int
 -- sumAll (x)
 --      | null x = 0
---      | otherwise = head (x) + (sumAll.(tail)) (x) // tail te devuelve la lista sin la cabeza
+--      | otherwise = head (x) + (sumAll.(tail)) (x)
 sumAll [] = 0
 sumAll (x:xs) = x + sumAll xs
+
+
+pow1 :: Int -> Int
+pow1 d = d
+pow2 :: Int -> (Int -> Int)
+pow2 d c = d + c
+
+pow3 :: Int -> (Int -> (Int -> Int))
+pow3 d c e = d + c + e
